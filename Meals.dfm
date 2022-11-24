@@ -2983,9 +2983,8 @@ object onefamilysoupkitchen: Tonefamilysoupkitchen
           Top = 63
           Width = 143
           Height = 50
-          DoubleBuffered = True
           Kind = bkClose
-          ParentDoubleBuffered = False
+          NumGlyphs = 2
           TabOrder = 8
         end
       end
@@ -3038,6 +3037,7 @@ object onefamilysoupkitchen: Tonefamilysoupkitchen
         ParentFont = False
         ReadOnly = True
         TabOrder = 1
+        Zoom = 100
       end
     end
     object tsevents: TTabSheet
@@ -3123,6 +3123,7 @@ object onefamilysoupkitchen: Tonefamilysoupkitchen
         ReadOnly = True
         ScrollBars = ssBoth
         TabOrder = 1
+        Zoom = 100
       end
     end
     object tsregister: TTabSheet
@@ -3225,6 +3226,7 @@ object onefamilysoupkitchen: Tonefamilysoupkitchen
         ParentFont = False
         ReadOnly = True
         TabOrder = 2
+        Zoom = 100
       end
       object redsignup: TRichEdit
         Left = 194
@@ -3238,6 +3240,7 @@ object onefamilysoupkitchen: Tonefamilysoupkitchen
         Font.Style = []
         ParentFont = False
         TabOrder = 3
+        Zoom = 100
       end
     end
     object tsadmin: TTabSheet
@@ -3440,9 +3443,7 @@ object onefamilysoupkitchen: Tonefamilysoupkitchen
           Width = 75
           Height = 25
           Caption = 'Clear'
-          DoubleBuffered = True
           Enabled = False
-          ParentDoubleBuffered = False
           TabOrder = 15
           OnClick = btnadminsignupclearClick
         end
@@ -3462,6 +3463,7 @@ object onefamilysoupkitchen: Tonefamilysoupkitchen
           'Please login to begin...')
         ParentFont = False
         TabOrder = 1
+        Zoom = 100
       end
       object DBGadmin: TDBGrid
         Left = 191
