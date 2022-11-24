@@ -1,0 +1,15 @@
+program pmeals;
+
+uses
+  Forms,
+  Meals in 'Meals.pas' {Form1},
+  Access in 'Access.pas';
+
+{$R *.res}
+
+begin
+  Application.Initialize;
+  Application.MainFormOnTaskbar := True;
+  Application.CreateForm(TForm1, Form1);
+  Application.Run;
+end.

@@ -1,0 +1,16 @@
+program pmeals;
+
+uses
+  Forms,
+  Meals in 'Meals.pas' {Form1},
+  u_mealsdatamodule in 'u_mealsdatamodule.pas' {mealsdatamodule: TDataModule};
+
+{$R *.res}
+
+begin
+  Application.Initialize;
+  Application.MainFormOnTaskbar := True;
+  Application.CreateForm(TForm1, Form1);
+  Application.CreateForm(Tmealsdatamodule, mealsdatamodule);
+  Application.Run;
+end.

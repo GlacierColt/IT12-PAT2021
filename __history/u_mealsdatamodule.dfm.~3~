@@ -1,0 +1,43 @@
+object mealsdatamodule: Tmealsdatamodule
+  OldCreateOrder = False
+  Height = 456
+  Width = 573
+  object dsrtblevents: TDataSource
+    DataSet = tblevents
+    Left = 488
+    Top = 64
+  end
+  object dsrtblvehicles: TDataSource
+    DataSet = tblvehicles
+    Left = 488
+    Top = 152
+  end
+  object ADOConnection: TADOConnection
+    Connected = True
+    ConnectionString = 
+      'Provider=Microsoft.Jet.OLEDB.4.0;Data Source=dbsouptruck.mdb;Per' +
+      'sist Security Info=False'
+    LoginPrompt = False
+    Mode = cmShareDenyNone
+    Provider = 'Microsoft.Jet.OLEDB.4.0'
+    Left = 296
+    Top = 120
+  end
+  object tblvehicles: TADOTable
+    Active = True
+    Connection = ADOConnection
+    CursorType = ctStatic
+    TableDirect = True
+    TableName = 'tblvehicles'
+    Left = 392
+    Top = 144
+  end
+  object tblevents: TADOTable
+    Active = True
+    Connection = ADOConnection
+    CursorType = ctStatic
+    TableName = 'tblevents'
+    Left = 392
+    Top = 64
+  end
+end

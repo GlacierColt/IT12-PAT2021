@@ -1,0 +1,25 @@
+unit u_mealsdatamodule;
+
+interface
+
+uses
+  SysUtils, Classes, DB;
+
+type
+  Tmealsdatamodule = class(TDataModule)
+    DataSource1: TDataSource;
+    DataSource2: TDataSource;
+  private
+    { Private declarations }
+  public
+    { Public declarations }
+  end;
+
+var
+  mealsdatamodule: Tmealsdatamodule;
+
+implementation
+
+{$R *.dfm}
+
+end.
